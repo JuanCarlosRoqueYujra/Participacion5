@@ -1,0 +1,8 @@
+<h1>Editar Producto</h1>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<form method="POST">
+    <label>Descripción:</label><input type="text" name="descripcion" value="{{ producto[1] }}">
+    <label>Cantidad:</label><input type="number" name="cantidad" value="{{ producto[2] }}">
+    <label>Precio:</label><input type="text" name="precio" value="{{ producto[3] }}">
+    <button type="submit">Actualizar</button>
+</form>
